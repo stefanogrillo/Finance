@@ -10,6 +10,8 @@ Overall, the application starts asking to the user either to <i>Register</i> or 
 
 The <i>Log In</i> process is easier: it only requires the username and the password.
 
-![]()
+![](https://github.com/stefanogrillo/Finance/blob/2f50b2816f9b24987c184d2741b81677de43bfc5/login.png)
 
 After these steps, the user is welcomed into an <i>Index</i>.
+
+![](https://github.com/stefanogrillo/Finance/blob/2f50b2816f9b24987c184d2741b81677de43bfc5/home.png)
