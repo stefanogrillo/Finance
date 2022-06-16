@@ -3,7 +3,7 @@ This is a Financial Web App: you can search, buy, and sell any share available i
 
 This is a [guided project](https://cs50.harvard.edu/x/2022/psets/9/finance/) from CS50 course. My solution to the project is available [here](https://github.com/stefanogrillo/CS50-s-Introduction-to-Computer-Science-2021-2022/tree/main/pset9/finance). My core objectives were: create a Register Page for new users, a Log In, an Index, a page to see current Quotations, a Buy page, a Sell page, an History of transactions, an Add/Withdraw Cash, and the possibility to Change the Password for the user. 
 
-This Web Application is developed using <i>Python's Flask</i> for the backend, and using <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i> and <i>Bootstrap</i> for the webpage. The webapp has a database in <i>SQLite</i>, and uses an <i>API</i> to retrieve information about the shares' quotations from <i>IEX</i>.
+This Web Application is developed using <i>Python's Flask</i> for the backend, and using <i>Python's Jinja</i>, <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i> and <i>Bootstrap</i> for the webpage. The webapp has a database in <i>SQLite</i>, and uses an <i>API</i> to retrieve information about the shares' quotations from <i>IEX</i>.
 
 The application starts asking to the user to <i>Register</i> his/her own account. The <i>Registering</i> process requires the user to insert a password with some constraints: a Lowercase Letter, an Uppercase Letter, a Number, and a total Length of 8 Characters. This is implemented in <i>JavaScript</i>. Once the requirements are met, the password should be rewritten so to check if there are typos. When password match, the registration is completed inserting the username and the encrypted password in the <i>SQLite</i> database. This will allow the user to enter the application.
 
@@ -25,6 +25,14 @@ The successive step is to actually Buy the stocks. The transaction will be immed
 
 ![](https://github.com/stefanogrillo/Finance/blob/1cad0265b936e2db2c3b084e479f5f918d99fe91/buy.gif)
 
-However, the user can also sell his/her shares in the Sell page. Here a dropdown <i>Jinja</i> menu will allow the user to choose the shares' Symbol, then he/she is allowed to change the quantity to be sold. 
+However, the user can also sell his/her shares in the Sell page. Here a dropdown <i>Jinja</i> menu will allow the user to choose the shares' Symbol, then he/she is allowed to change the quantity to be sold.
 
 ![](https://github.com/stefanogrillo/Finance/blob/1cad0265b936e2db2c3b084e479f5f918d99fe91/sell.gif)
+
+Then, a History page is necessary to show every transaction ever occurred. Here the list starts from the oldest to the newest.
+
+![](https://github.com/stefanogrillo/Finance/blob/68407c76b49da92479d640a8b2251851ce022504/history.gif)
+
+THe user is also allowed to insert his/her own money in the Add/Withdraw page. Here the user has to insert an IBAN between 11 and 14 characters long, with the first two characters being letters. It is a way to mimic actual IBANs, yet I have a [python code] to check if the IBAN exists as a MasterCard, 
+
+![](https://github.com/stefanogrillo/Finance/blob/68407c76b49da92479d640a8b2251851ce022504/addwithdraw.gif)
