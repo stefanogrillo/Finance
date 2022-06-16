@@ -17,7 +17,14 @@ After these steps, the user is welcomed into an <i>Index</i> where his/her trans
 
 ![](https://github.com/stefanogrillo/Finance/blob/2f50b2816f9b24987c184d2741b81677de43bfc5/home.png)
 
-The quote page is where the user can look for the current price of shares of a specific company, by knowing the Symbol.
+The quote page is where the user can look for the current price of shares of a specific company, by knowing the Symbol. A must-do step before buying.
 
 ![](https://github.com/stefanogrillo/Finance/blob/43211ac751ab3b7edce6b3ed0f4e0935a92fe402/quote.gif)
 
+The successive step is to actually Buy the stocks. The transaction will be immediately recorded in the <i>SQLite</i> database. 
+
+![](https://github.com/stefanogrillo/Finance/blob/1cad0265b936e2db2c3b084e479f5f918d99fe91/buy.gif)
+
+However, the user can also sell his/her shares in the Sell page. Here a dropdown <i>Jinja</i> menu will allow the user to choose the shares' Symbol, then he/she is allowed to change the quantity to be sold. 
+
+![](https://github.com/stefanogrillo/Finance/blob/1cad0265b936e2db2c3b084e479f5f918d99fe91/sell.gif)
