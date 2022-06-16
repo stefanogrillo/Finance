@@ -41,4 +41,9 @@ Finally, the user can also Change his/her Password. Here, the user must insert h
 
 ![](https://github.com/stefanogrillo/Finance/blob/1e8d3d8fcc9e936f6014ae5db831846436056350/changepassword.png)
 
-![](https://github.com/stefanogrillo/Finance/blob/1e8d3d8fcc9e936f6014ae5db831846436056350/changepassword.png)
+In case of error, the Webapp will show an auto-update message with a meme. The following is an example.
+
+![](https://github.com/stefanogrillo/Finance/blob/243005a920eb564454917b09ec8514b3f3990e0d/error.gif)
+
+So that's my project. There are a few personal touches here and there that I wanted to implement in the page, like a JavaScript for the password checking, the possibilities to add/withdraw cash, or the welcoming message when you first enter the app (the blue line with "Welcome Back!").
+Thank you for watching this. 
