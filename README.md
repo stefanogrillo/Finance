@@ -33,6 +33,12 @@ Then, a History page is necessary to show every transaction ever occurred. Here 
 
 ![](https://github.com/stefanogrillo/Finance/blob/68407c76b49da92479d640a8b2251851ce022504/history.gif)
 
-THe user is also allowed to insert his/her own money in the Add/Withdraw page. Here the user has to insert an IBAN between 11 and 14 characters long, with the first two characters being letters. It is a way to mimic actual IBANs, yet I have a [python code] to check if the IBAN exists as a MasterCard, 
+THe user is also allowed to insert his/her own money in the Add/Withdraw page. Here the user has to insert an IBAN between 11 and 14 characters long, with the first two characters being letters. It is a way to mimic actual IBANs, yet I have a [python code](https://github.com/stefanogrillo/CS50-s-Introduction-to-Computer-Science-2021-2022/blob/beae58af3d5e4f14de0f357948f07b400dd1c264/pset6/credit.py) to check if the IBAN exists as a MasterCard, American Express, Visa, or Invalid. This is Luhn's algorithm, which I did not implement in this Webapp. 
 
 ![](https://github.com/stefanogrillo/Finance/blob/68407c76b49da92479d640a8b2251851ce022504/addwithdraw.gif)
+
+Finally, the user can also Change his/her Password. Here, the user must insert his/her username and old passwords, that will be chached in th database. If username and  password are already in the database (thus meaning the current user has not stolen the account of someone else), then the new password can be inserted. This follows the same constraints as in the Register phase an must be checked against the repeated new password. If these constraints are met, the new password is inserted in the database (encrypted) instead of the old password.
+
+![](https://github.com/stefanogrillo/Finance/blob/1e8d3d8fcc9e936f6014ae5db831846436056350/changepassword.png)
+
+![](https://github.com/stefanogrillo/Finance/blob/1e8d3d8fcc9e936f6014ae5db831846436056350/changepassword.png)
